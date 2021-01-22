@@ -1,5 +1,8 @@
 import React, { useEffect, useState, Fragment } from "react";
 import Tabletop from "tabletop";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import "./index.css";
 
 export default function App() {
@@ -16,25 +19,19 @@ export default function App() {
 
   return (
     <>
-    <div class="header">
+    <div className="header">
       <h1>Dados da Planilha</h1>
     </div>
+      <Container className="containerData">
         {data.map((item, i) => (
                 <Fragment key={i}>
-                  <div class="item">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col">
-                          <p>Nome: {item.Nome}</p>
-                        </div>
-                        <div class="col">
-                          <p>Dados: {item.Dados}</p>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="item">
+                    <p>Nome: {item.Nome}</p>
+                    <p>Dados: {item.Dados}</p>
                   </div>
                 </Fragment>
         ))}
+      </Container>
     </>
   );
 }
