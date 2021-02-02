@@ -26,16 +26,22 @@ export default function App() {
                 <Fragment key={i}>
                   <div className="item">
                     <p className="itemNome">{item.Nome}</p>
-                      {!item.NomeD && 
-                      <div>
-                        <p>Mais informações em: </p>
-                        <a href="item.Dados">{item.Dados}</a>
-                      </div>}
                       {item.NomeD && 
                       <div>
-                        <p>Dados da conta bancária</p> 
+                        <p>Dados da conta bancária</p>
+                        <p>Banco {item.Banco}</p> 
                         <p>Nome: {item.NomeD}</p>
                         <p>CPF: {item.CPF}</p>
+                        <p>Agência: {item.Agencia}</p>
+                        <p>Conta: {item.Conta}</p>
+                      </div> }
+                      {item.Link && 
+                      <div>
+                        <p>Mais informações <a href={item.Link}>aqui</a> </p>
+                      </div>}
+                      {item.Outros && 
+                      <div>
+                        <p>{item.Outros}</p>
                       </div> }
                   </div>
                 </Fragment>
