@@ -15,6 +15,7 @@ export default function App() {
       .catch((err) => console.warn(err));
   }, []);
 
+
   return (
     <>
     <div className="header">
@@ -24,8 +25,18 @@ export default function App() {
         {data.map((item, i) => (
                 <Fragment key={i}>
                   <div className="item">
-                    <p>Nome: {item.Nome}</p>
-                    <p>Dados: {item.Dados}</p>
+                    <p className="itemNome">{item.Nome}</p>
+                      {!item.NomeD && 
+                      <div>
+                        <p>Mais informações em: </p>
+                        <a href="item.Dados">{item.Dados}</a>
+                      </div>}
+                      {item.NomeD && 
+                      <div>
+                        <p>Dados da conta bancária</p> 
+                        <p>Nome: {item.NomeD}</p>
+                        <p>CPF: {item.CPF}</p>
+                      </div> }
                   </div>
                 </Fragment>
         ))}
