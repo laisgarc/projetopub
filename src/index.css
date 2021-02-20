@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +9,11 @@
 body {
   background: #f1f1f0;
   color: #333;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.bancario p {
+  margin-bottom: 0px;
 }
 
 .containerData {
@@ -30,7 +35,8 @@ body {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   display: inline-block;
-  height: 350px;
+  font-weight: 300;
+  height: 100%;
   line-break: strict;
   word-break: break-all;
   margin: 25px 0 25px 10px;
@@ -42,6 +48,13 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+}
+
+.subtitulo {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 440px) {
