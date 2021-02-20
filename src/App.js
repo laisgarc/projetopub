@@ -37,7 +37,7 @@ export default function App() {
                         <p className="subtitulo">Contato</p>
                         <p>{item.Contato}</p>
                         {item.Facebook && 
-                          <a href={item.Facebook} target="_blank" rel="noreferrer">Facebook</a>
+                          <a href={item.Facebook} target="_blank" rel="noreferrer">Facebook <br/></a>
                         }
                         {item.Instagram && 
                           <a href={item.Instagram} target="_blank" rel="noreferrer">Instagram</a>
