@@ -29,7 +29,7 @@ export default function App() {
                       {item.Sobre && 
                       <div>
                         <p className="subtitulo">Sobre a instituição</p>
-                        <p>item.Sobre</p>
+                        <p>{item.Sobre}</p>
                         <hr/>
                       </div> }
                       {(item.Contato||item.Facebook||item.Instagram) && 
