@@ -49,6 +49,15 @@ body {
   text-align: center;
 }
 
+.img-row {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 8rem;
+}
+
 .subtitulo {
   font-size: 15px;
   font-weight: bold;
