@@ -2,6 +2,8 @@ import React, { useEffect, useState, Fragment } from "react";
 import Tabletop from "tabletop";
 import Container from 'react-bootstrap/Container';
 import "./index.css";
+import Destaques from './components/Destaques'
+import { Jumbotron } from "react-bootstrap";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -15,17 +17,19 @@ export default function App() {
       .catch((err) => console.warn(err));
   }, []);
 
-
   return (
     <>
     <div className="header">
       <h1>Dados da Planilha</h1>
     </div>
+    <Jumbotron className="jumbotron">
+      <Destaques datas={data} />
+    </Jumbotron>
       <Container className="containerData">
         {data.map((item, i) => (
                 <Fragment key={i}>
                   <div className="item">
-                    <div class="img-row">
+                    <div className="img-row">
                       {item.Logo && 
                         <img className="logo" src={item.Logo} alt="logo"/>
                       }
