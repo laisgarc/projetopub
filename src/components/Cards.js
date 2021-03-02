@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
@@ -13,6 +13,10 @@ const Cards = (props) => {
   'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR',
   'SC', 'SP', 'SE', 'TO' 
   ];
+
+  useEffect(() => {
+      setArray(props.datas)
+  }, [props.datas]);
 
   function filterStates(state, backup, array) {
     let arrayFiltrado = backup.filter(item => item.UF === state);
