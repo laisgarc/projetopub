@@ -49,7 +49,7 @@ const Destaques = (props) => {
               <h3>{item.Nome}</h3>
             }
             {item.Sobre && <p>{item.Sobre}</p>}
-            <button className="button-carousel" onClick={() => goToCard(item.Nome)} >Conheça</button>
+            <button className="button-carousel" onClick={() => goToCard(item.Nome)} >Saiba mais</button>
           </Carousel.Caption>
           </Carousel.Item>
       ))}
