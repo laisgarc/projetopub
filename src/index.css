@@ -22,7 +22,8 @@ body {
 
 .caption{
   position: initial !important;
-  padding: 0 8rem;
+  padding: 2rem 8rem;
+  margin-top: 1rem;
 }
 
 .carousel {
