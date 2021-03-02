@@ -8,16 +8,34 @@
 
 :root {
   --vermelho: rgb(202, 32, 23);
+  --cinza: #333;
 }
 
 body {
   background: #f1f1f0;
-  color: #333;
+  color: var(--cinza);
   font-family: 'Lato', sans-serif;
 }
 
 .bancario p {
   margin-bottom: 0px;
+}
+
+.button-filter {
+  background-color: var(--vermelho);
+  border-radius: 5px;
+}
+
+.button-filter button {
+  color: white !important;
+}
+
+.button-limpar {
+ appearance: none !important;
+ background: none !important;
+ border: none;
+ color: var(--cinza);
+ 
 }
 
 .caption{
@@ -28,13 +46,24 @@ body {
 
 .carousel {
   height: 100%;
-  background-color: #333;
+  background-color: var(--cinza);
   color: #f1f1f0;
 }
 
 .containerData {
   columns: 2 auto;
   margin-top: 10px;
+}
+
+.dropdown-menu {
+  height: auto;
+  max-height: 180px;
+  overflow-x: hidden;
+}
+
+.filter{
+  display: flex;
+  justify-content: center;
 }
 
 .header {

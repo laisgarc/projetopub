@@ -15,7 +15,7 @@ const Destaques = (props) => {
   return(
     <Carousel className="carousel">
       {destaque.map((item, i) => (
-          <Carousel.Item>
+          <Carousel.Item key={i}>
           <Carousel.Caption className="caption">
             {item.Nome && 
               <h3>{item.Nome}</h3>
