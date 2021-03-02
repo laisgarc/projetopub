@@ -140,6 +140,13 @@ body {
   .containerData {
     columns: 1 auto;
   }
+  .caption {
+    padding: 2rem;
+    font-size: 10px;
+  }
+  .caption h3 {
+    font-size: 15px;
+  }
   .item {
     margin: 25px 5px 25px 5px;
     height: 100%;
