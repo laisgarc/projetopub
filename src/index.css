@@ -17,8 +17,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.animation > p {
+  color: var(--vermelho);
+  transition: all 0.3s;
+}
+
 .bancario p {
   margin-bottom: 0px;
+}
+
+.button-carousel {
+  appearance: none !important;
+  background-color: var(--vermelho);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
 }
 
 .button-filter {
@@ -93,9 +107,11 @@ body {
 }
 
 .itemNome {
+  color: var(--cinza);
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  transition: all 0.3s;
 }
 
 .img-row {

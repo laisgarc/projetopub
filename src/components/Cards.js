@@ -42,7 +42,7 @@ const Cards = (props) => {
       <Container className="containerData">
         {array.map((item, i) => (
                   <Fragment key={i}>
-                    <div className="item">
+                    <div className="item" id={item.Nome}>
                       <div className="img-row">
                         {item.Logo && 
                           <img className="logo" src={item.Logo} alt="logo"/>
