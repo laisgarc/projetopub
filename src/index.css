@@ -35,7 +35,11 @@ body {
  background: none !important;
  border: none;
  color: var(--cinza);
- 
+ margin-left: 10px;
+ transition: color 0.5s;
+}
+.button-limpar:hover {
+  color: var(--red);
 }
 
 .caption{
