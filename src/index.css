@@ -121,7 +121,7 @@ body {
 }
 
 .jumbotron {
-  height: 20rem;
+  height: 30rem;
   padding: 0 !important;
 }
 
@@ -132,6 +132,11 @@ body {
 .subtitulo {
   font-size: 15px;
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 2px;
+}
+.subtituloContato {
+  font-size: 13px;
   text-align: left;
   margin-bottom: 2px;
 }
@@ -153,5 +158,8 @@ body {
   }
   .itemNome {
     font-size: 25px;
+  }
+  .logo{
+    width: 120px;
   }
 }
